@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Details Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+ 
+  <link rel="stylesheet" href="Details-pg.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  
+</head>
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+<header>
+  <img src="public/logo.png" alt="logo" class="logo">
+</header>
+
+<div class="details-section">
+  <h2>Enter your details</h2>
+  <form id="detailsForm">
+    <label for="fullName">Full Name <span>*</span></label>
+    <input type="text" id="fullName" name="fullName" required>
+    
+    <label for="mobileNumber">Mobile Number <span>*</span></label>
+    <div class="mobile-input">
+      <input type="tel" id="mobileNumber" name="mobileNumber" required>
+    </div>
+    
+    
+    <label for="email">Email <span>*</span></label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="confirmEmail">Confirm Email <span>*</span></label>
+    <input type="email" id="confirmEmail" name="confirmEmail" required>
+    
+    <label for="gender">Gender</label>
+    <select id="gender" name="gender">
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+    </select>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+  const detailsForm = document.getElementById("detailsForm");
+  const continueButton = document.getElementById("continue");
+
+  detailsForm.addEventListener("input", () => {
+    const fullName = document.getElementById("fullName").value;
+    const mobileNumber = document.getElementById("mobileNumber").value;
+    const email = document.getElementById("email").value;
+    const confirmEmail = document.getElementById("confirmEmail").value;
+    
+    if (fullName && mobileNumber && email && confirmEmail) {
+      continueButton.disabled = false;
+    } else {
+      continueButton.disabled = true;
+    }
+  });
+
+  detailsForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    // Store form data in local storage
+    const formData = {
+      fullName: document.getElementById("fullName").value,
+      mobileNumber: document.getElementById("mobileNumber").value,
+      email: document.getElementById("email").value,
+      confirmEmail: document.getElementById("confirmEmail").value,
+      gender: document.getElementById("gender").value
+    };
+    localStorage.setItem("formData", JSON.stringify(formData));
+    // Redirect to Payment page
+    window.location.href = "Payment-pg.html";
+  });
+});
+
+// Initialize intlTelInput
+const mobileInput = document.getElementById("mobileNumber");
+const iti = window.intlTelInput(mobileInput, {
+  separateDialCode: true,
+  initialCountry: "auto",
+  preferredCountries: ["us", "gb", "ca"], 
+});
+
+// Update the hidden select field when user changes country
+mobileInput.addEventListener("countrychange", () => {
+  const selectedCountry = iti.getSelectedCountryData();
+  const countrySelect = document.getElementById("countrySelect");
+  countrySelect.value = selectedCountry.iso2;
+});
+
+</script>
+
+    <button type="submit" id="continue" disabled>Continue with Purchase</button>
+  </form>
+</div>
+
+
+<script src="Details-pg.js"></script>
+
+</body>
+</html>

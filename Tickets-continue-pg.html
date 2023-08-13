@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking</title>
+    <link rel="stylesheet" href="Tickets-continue-pg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+</head>
+<body>
+  
+  <header>
+      <img src="public/logo.png" alt="logo" class="logo">
+      <br>
+      <br>
+      <br>
+      <br>
+      <p>Welcome to our booking section ♠️😊🐢where you can book your <br>tickets to our Hikkaduwa hatchery</p>
+  </header>
+
+<div class="Date">
+  <h2>Date</h2><br>
+  <label for="date">Book your Date</label>
+  <input type="date" id="date" name="date" required><br><br>
+</div>
+
+
+
+<div class="Guests">
+  <h2>Guests</h2><br>
+        <label id="guestlbl">Srilankan Adult</label>
+        <button id="decrease1">-</button>
+        <label id="Countlbl1">0</label>
+        <button id="increase1">+</button><br><br>
+    
+        <label id="guestlbl">Srilankan Child</label>
+        <button id="decrease2">-</button>
+        <label id="Countlbl2">0</label>
+        <button id="increase2">+</button><br><br>
+    
+        <label id="guestlbl">Foreigner Adult</label>
+        <button id="decrease3">-</button>
+        <label id="Countlbl3">0</label>
+        <button id="increase3">+</button><br><br>
+    
+        <label id="guestlbl">Foreigner Child</label>
+        <button id="decrease4">-</button>
+        <label id="Countlbl4">0</label>
+        <button id="increase4">+</button><br><br>
+    
+        <label id="guestlbl5">Infant</label>
+        <button id="decrease5">-</button>
+        <label id="Countlbl5">0</label>
+        <button id="increase5">+</button><br><br>
+</div>
+<script src="Tickets-continue-pg.js"></script>
+ 
+
+<div class="Duration">
+  <h2>Duration</h2><br>
+  <label for="duration">Select your Duration :<br>(Click a time slot then press <br>SHIFT + another time slot for an aditional time)<br></label>
+  <select id="duration" name="duration" multiple>
+    <option value="1">07.00 - 08.00</option>
+    <option value="2">08.00 - 09.00</option>
+    <option value="3">09.00 - 10.00</option>
+    <option value="4">10.00 - 11.00 (Peak)</option>
+    <option value="5">11.00 - 12.00 (Peak)</option>
+    <option value="6">12.00 - 13.00 (Peak)</option>
+    <option value="7">13.00 - 14.00</option>
+    <option value="8">14.00 - 15.00</option>
+    <option value="9">15.00 - 16.00 (Peak)</option>
+    <option value="10">16.00 - 17.00 (Peak)</option>
+    <option value="11">17.00 - 18.00 (Peak)</option>
+  </select><br><br>
+</div>
+
+
+
+<div class="Pricing Table">
+  <h2>Pricing Table For All Visitors</h2><br>
+  <tr>
+    <th>Foreigner Adult - 10 USD  <br>Peak hour Price - 13 USD</th> <br>
+    <br>
+    <th>Foreigner Child - 05 USD  <br>Peak hour Price - 08 USD</th><br>
+    <br>
+    <th>Sri-Lankan Adult - 04 USD  <br>Peak hour Price - 06 USD</th><br>
+    <br>
+    <th>Sri-Lankan Child - 02 USD  <br>Peak hour Price - 03 USD</th><br>
+    <br>
+    <th>Infant (Age under 4 for both categories) - FREE</th>
+    <Br><br>
+  </tr>
+</div>
+<footer class="footer">
+  <p>&copy; 2023 Turtle Hatchery. All rights reserved. | <a href="#">Privacy Policy</a></p>
+</footer>
+
+<section class="summary-section">
+    <h2>Summary</h2>
+      <table id="summaryTable">
+        <tr>
+          <td>Date</td>
+          <td id="summaryDate"></td>
+          </tr>
+          <tr>
+            <td>Time</td>
+            <td id="summaryTime"></td>
+          </tr>
+          <tr>
+            <td>Duration</td>
+            <td id="summaryDuration"></td>
+            </tr>
+            <tr>
+            <td>Tickets</td>
+            <td id="summaryTickets"></td>
+            </tr>
+            <tr>
+              <td>Total Payable (USD)</td>
+              <td id="summaryTotal"></td>
+            </tr>
+        </table>
+</section>
+<script>
+// Calculate the total payable based on user selections
+function calculateTotal() {
+  // Retrieve selected values
+  const selectedDate = document.getElementById("date").value;
+  const selectedDurations = Array.from(document.getElementById("duration").selectedOptions).map(option => option.value);
+  const slAdultCount = parseInt(document.getElementById("Countlbl1").textContent);
+  const slChildCount = parseInt(document.getElementById("Countlbl2").textContent);
+  const foreignAdultCount = parseInt(document.getElementById("Countlbl3").textContent);
+  const foreignChildCount = parseInt(document.getElementById("Countlbl4").textContent);
+  const infantCount = parseInt(document.getElementById("Countlbl5").textContent);
+
+  // charges based on selected counts and durations
+  const totalPayable = calculateTotalCharge(selectedDurations);
+
+  // Update summary table
+  document.getElementById("summaryDate").textContent = selectedDate;
+  document.getElementById("summaryTime").textContent = getSelectedDurationText(selectedDurations);
+  document.getElementById("summaryDuration").textContent = selectedDurations.length;
+  document.getElementById("summaryTickets").textContent = `${slAdultCount} SL Adults, ${slChildCount} SL Children, ${foreignAdultCount} Foreigner Adults, ${foreignChildCount} Foreigner Children, ${infantCount} Infants`;
+  document.getElementById("summaryTotal").textContent = totalPayable;
+
+  // local storage
+  const summaryData = {
+    date: selectedDate,
+    durations: selectedDurations,
+    slAdultCount,
+    slChildCount,
+    foreignAdultCount,
+    foreignChildCount,
+    infantCount,
+    totalPayable
+  };
+  localStorage.setItem("summaryData", JSON.stringify(summaryData));
+}
+
+// Calculate total charges for selected durations
+function calculateTotalCharge(selectedDurations) {
+  let totalCharge = 0;
+  selectedDurations.forEach(duration => {
+    const durationCharge = calculateDurationCharge(duration);
+    totalCharge += durationCharge;
+  });
+  return totalCharge;
+}
+
+// selected counts and duration
+function calculateDurationCharge(duration) {
+  const slAdultCount = parseInt(document.getElementById("Countlbl1").textContent);
+  const slChildCount = parseInt(document.getElementById("Countlbl2").textContent);
+  const foreignAdultCount = parseInt(document.getElementById("Countlbl3").textContent);
+  const foreignChildCount = parseInt(document.getElementById("Countlbl4").textContent);
+
+// charges based on selected counts and duration
+  const slAdultCharge = slAdultCount * (duration === "4" ? 6 : 4);
+  const slChildCharge = slChildCount * (duration === "4" ? 3 : 2);
+  const foreignAdultCharge = foreignAdultCount * (duration === "4" ? 13 : 10);
+  const foreignChildCharge = foreignChildCount * (duration === "4" ? 8 : 5);
+
+// total charge for this duration
+  const totalCharge = slAdultCharge + slChildCharge + foreignAdultCharge + foreignChildCharge;
+
+  return totalCharge;
+}
+
+// Get selected duration text
+function getSelectedDurationText(selectedDurations) {
+  return selectedDurations.map(duration => document.querySelector(`#duration option[value="${duration}"]`).textContent).join(", ");
+}
+
+document.getElementById("increase1").addEventListener("click", () => handleCountChange("increase1", "Countlbl1", 1));
+document.getElementById("decrease1").addEventListener("click", () => handleCountChange("decrease1", "Countlbl1", -1));
+
+// Handle date and duration changes
+document.getElementById("date").addEventListener("change", calculateTotal);
+document.getElementById("duration").addEventListener("change", calculateTotal);
+
+// Initial calculation on page load
+calculateTotal();
+
+// To retrieve data from local storage and pre-fill the page
+document.addEventListener("DOMContentLoaded", () => {
+  const summaryData = JSON.parse(localStorage.getItem("summaryData"));
+  if (summaryData) {
+    document.getElementById("date").value = summaryData.date;
+    document.getElementById("duration").value = summaryData.durations;
+    document.getElementById("Countlbl1").textContent = summaryData.slAdultCount;
+    document.getElementById("Countlbl2").textContent = summaryData.slChildCount;
+    document.getElementById("Countlbl3").textContent = summaryData.foreignAdultCount;
+    document.getElementById("Countlbl4").textContent = summaryData.foreignChildCount;
+    document.getElementById("Countlbl5").textContent = summaryData.infantCount;
+    calculateTotal(); // Update summary table
+  }
+});
+</script>
+
+<a href="Details-pg.html"> 
+  <button id="continue">Continue with Purchase</button>
+</a>
+
+
+
+
+</body>
+</html>

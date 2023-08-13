@@ -1,0 +1,534 @@
+.below-are-some3,
+.did-you-know {
+  margin: 0;
+  position: absolute;
+  letter-spacing: -0.02em;
+  display: inline-block;
+}
+.did-you-know {
+  top: 0;
+  left: calc(50% - 550px);
+  font-size: inherit;
+  line-height: 98.9%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: inherit;
+  width: 1100px;
+}
+.below-are-some3 {
+  top: 246px;
+  left: calc(50% - 367px);
+  font-size: var(--font-size-5xl);
+  line-height: 139.9%;
+  font-weight: 600;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  width: 734px;
+  height: 37px;
+}
+.did-you-know-that-turtles-hav-parent {
+  position: absolute;
+  top: 245px;
+  left: 170px;
+  width: 1100px;
+  height: 283px;
+  text-align: center;
+}
+.section-1-child,
+.section-1-child1,
+.section-1-inner,
+.section-1-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0.7px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  width: 1253px;
+  height: 60px;
+}
+.section-1-child1,
+.section-1-inner,
+.section-1-item {
+  width: 313.25px;
+  height: 361.73px;
+}
+.section-1-child1,
+.section-1-inner {
+  left: 313.25px;
+}
+.section-1-child1 {
+  left: 626.5px;
+}
+.images,
+.life-span,
+.name,
+.where-is-it {
+  position: absolute;
+  top: 20.88px;
+  left: 132.01px;
+  letter-spacing: -0.02em;
+  line-height: 98.9%;
+  font-weight: 600;
+}
+.images,
+.life-span,
+.where-is-it {
+  left: 400.51px;
+}
+.images,
+.life-span {
+  left: 751.8px;
+}
+.life-span {
+  top: 21px;
+  left: 1056px;
+}
+.olive-ridley-turtle,
+.olive-ridley-turtles,
+.rekawa-beach-located {
+  position: absolute;
+  left: 23.12px;
+  text-align: left;
+  display: inline-block;
+}
+.olive-ridley-turtle {
+  margin: 0;
+  top: 85.77px;
+  font-size: 41.02px;
+  letter-spacing: -0.02em;
+  line-height: 98.9%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: var(--font-bowlby-one);
+  color: var(--color-gainsboro-100);
+  width: 229.72px;
+}
+.olive-ridley-turtles,
+.rekawa-beach-located {
+  top: 225.16px;
+  font-size: 15.66px;
+  line-height: 120%;
+  font-weight: 600;
+  width: 252.09px;
+}
+.rekawa-beach-located {
+  top: 113.44px;
+  left: 343.68px;
+  font-size: 18.09px;
+}
+.img-icon {
+  position: absolute;
+  top: 81.3px;
+  left: 639.18px;
+  width: 286.4px;
+  height: 258.12px;
+  object-fit: cover;
+}
+.years {
+  position: absolute;
+  top: 190px;
+  left: 1031px;
+  font-size: var(--font-size-11xl);
+  letter-spacing: -0.02em;
+  line-height: 98.9%;
+  font-weight: 600;
+}
+.section-13,
+.section-2-child,
+.section-2-inner,
+.section-2-item {
+  border: 0.7px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+}
+.section-13 {
+  align-self: stretch;
+  position: relative;
+  background-color: var(--color-gray-200);
+  height: 362px;
+  text-align: center;
+  font-size: var(--font-size-mid-9);
+}
+.section-2-child,
+.section-2-inner,
+.section-2-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 313.25px;
+  height: 290.13px;
+}
+.section-2-inner,
+.section-2-item {
+  left: 313.25px;
+}
+.section-2-inner {
+  left: 626.5px;
+}
+.loggerhead-turtles {
+  margin: 0;
+  position: absolute;
+  top: 26.1px;
+  left: 23.12px;
+  font-size: inherit;
+  letter-spacing: -0.02em;
+  line-height: 98.9%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: var(--font-bowlby-one);
+  color: var(--color-gainsboro-100);
+  display: inline-block;
+  width: 260.29px;
+  height: 67.12px;
+}
+.kosgoda-beach-situated,
+.the-loggerhead-sea {
+  position: absolute;
+  top: 119.33px;
+  left: 23.12px;
+  font-size: 15.66px;
+  line-height: 120%;
+  font-weight: 600;
+  display: inline-block;
+  width: 252.09px;
+  height: 96.21px;
+}
+.kosgoda-beach-situated {
+  top: 41.99px;
+  left: 343.68px;
+  font-size: 18.09px;
+  width: 252.38px;
+  height: 202.42px;
+}
+.img-icon1 {
+  position: absolute;
+  top: 16.41px;
+  left: 639.92px;
+  width: 286.4px;
+  height: 258.13px;
+  object-fit: cover;
+}
+.to-80-years {
+  position: absolute;
+  top: 130px;
+  left: 996px;
+  font-size: var(--font-size-11xl);
+  letter-spacing: -0.02em;
+  line-height: 98.9%;
+  font-weight: 600;
+  text-align: center;
+}
+.section-22 {
+  align-self: stretch;
+  position: relative;
+  background-color: var(--color-gray-200);
+  border: 0.7px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  height: 290px;
+}
+.green-turtle {
+  margin: 0;
+  position: absolute;
+  top: 25.77px;
+  left: 23.26px;
+  font-size: inherit;
+  letter-spacing: -0.02em;
+  line-height: 98.9%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: var(--font-bowlby-one);
+  color: var(--color-gainsboro-100);
+  display: inline-block;
+  width: 229.98px;
+  height: 68.05px;
+}
+.green-turtles-are,
+.pigeon-island-national {
+  position: absolute;
+  top: 119.93px;
+  left: 23.12px;
+  font-size: 15.66px;
+  line-height: 120%;
+  font-weight: 600;
+  display: inline-block;
+  width: 252.09px;
+  height: 120.08px;
+}
+.pigeon-island-national {
+  top: 41.28px;
+  left: 343.68px;
+  font-size: 18.09px;
+  width: 252.38px;
+  height: 221.37px;
+}
+.img-icon2 {
+  position: absolute;
+  top: 16.41px;
+  left: 639.92px;
+  width: 286.4px;
+  height: 258.12px;
+  object-fit: cover;
+}
+.hawksbill-turtle,
+.years1 {
+  position: absolute;
+  letter-spacing: -0.02em;
+  line-height: 98.9%;
+}
+.years1 {
+  top: 130px;
+  left: 1036px;
+  font-size: var(--font-size-11xl);
+  font-weight: 600;
+  text-align: center;
+}
+.hawksbill-turtle {
+  margin: 0;
+  top: 25.84px;
+  left: 23.26px;
+  font-size: inherit;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: var(--font-bowlby-one);
+  color: var(--color-gainsboro-100);
+  display: inline-block;
+  width: 229.98px;
+  height: 68.05px;
+}
+.reefs-around-hikkaduwa {
+  position: absolute;
+  top: 46.51px;
+  left: 343.68px;
+  font-size: 18.09px;
+  line-height: 120%;
+  font-weight: 600;
+  display: inline-block;
+  width: 252.38px;
+  height: 196.39px;
+}
+.leatherback-turtle,
+.to-60-years {
+  position: absolute;
+  letter-spacing: -0.02em;
+  line-height: 98.9%;
+}
+.to-60-years {
+  top: 130px;
+  left: 995px;
+  font-size: var(--font-size-11xl);
+  font-weight: 600;
+  text-align: center;
+}
+.leatherback-turtle {
+  margin: 0;
+  top: 25.91px;
+  left: 23.26px;
+  font-size: inherit;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: var(--font-bowlby-one);
+  color: var(--color-gainsboro-100);
+  display: inline-block;
+  width: 269.61px;
+  height: 68.05px;
+}
+.angalle-beach-tangalle,
+.leatherback-turtles-are {
+  position: absolute;
+  top: 119.8px;
+  left: 23.26px;
+  font-size: 15.66px;
+  line-height: 120%;
+  font-weight: 600;
+  display: inline-block;
+  width: 252.38px;
+  height: 155.05px;
+}
+.angalle-beach-tangalle {
+  top: 46.58px;
+  left: 343.68px;
+  font-size: 18.09px;
+  height: 196.39px;
+}
+.table3 {
+  position: absolute;
+  top: 663px;
+  left: calc(50% - 627px);
+  width: 1253px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 33.56px;
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+.footer-child5 {
+  position: relative;
+  border-top: 1px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  width: 1339.05px;
+  height: 1px;
+}
+.turtle-hatchery12 {
+  text-decoration: none;
+  position: relative;
+  line-height: 96.9%;
+  text-transform: uppercase;
+  color: inherit;
+  display: inline-block;
+  width: 274px;
+  flex-shrink: 0;
+}
+.privacy-policy6 {
+  position: relative;
+  font-size: var(--font-size-lg);
+  line-height: 164.4%;
+  font-family: var(--font-inter);
+  text-align: right;
+}
+.turtle-hatchery-parent9 {
+  width: 1205px;
+  height: 36px;
+  display: flex;
+  flex-direction: row;
+  padding: 0 0 var(--padding-7xs);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-788xl);
+}
+.footer8 {
+  position: absolute;
+  top: 2502px;
+  left: calc(50% - 669px);
+  width: 1338.05px;
+  height: 67px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--gap-xl);
+  font-size: var(--font-size-3xl);
+}
+.turtle-hatchery13 {
+  margin: 0;
+  position: absolute;
+  top: 1px;
+  left: calc(50% - 108.61px);
+  font-size: 20.94px;
+  line-height: 96.9%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: var(--font-bowlby-one);
+  text-align: left;
+}
+.frame-child11 {
+  position: absolute;
+  top: 43.35px;
+  left: calc(50% - 571px);
+  width: 1142px;
+  height: 0.94px;
+  object-fit: cover;
+}
+.categories6,
+.hikkaduwa-hatchery6,
+.home6,
+.other-hatcheries7,
+.purcahse-donation6,
+.threats6 {
+  text-decoration: none;
+  position: absolute;
+  top: 68.15px;
+  left: 112.32px;
+  font-weight: 600;
+  color: inherit;
+  cursor: pointer;
+}
+.categories6:hover,
+.hikkaduwa-hatchery6:hover,
+.home6:hover,
+.other-hatcheries7:hover,
+.purcahse-donation6:hover,
+.threats6:hover {
+  color: var(--color-yellow-100);
+  cursor: pointer;
+}
+.categories6,
+.hikkaduwa-hatchery6,
+.other-hatcheries7,
+.purcahse-donation6,
+.threats6 {
+  left: 207.79px;
+}
+.hikkaduwa-hatchery6,
+.other-hatcheries7,
+.purcahse-donation6,
+.threats6 {
+  left: 345.39px;
+}
+.other-hatcheries7,
+.purcahse-donation6,
+.threats6 {
+  left: 561.61px;
+}
+.other-hatcheries7,
+.purcahse-donation6 {
+  left: 672.99px;
+}
+.purcahse-donation6 {
+  left: 858.32px;
+}
+.turtle-hatchery-parent10 {
+  position: absolute;
+  top: 55.22px;
+  left: calc(50% - 571px);
+  width: 1142px;
+  height: 88.75px;
+  text-align: center;
+  font-size: 16.85px;
+  color: var(--color-gainsboro-100);
+  font-family: var(--font-inter);
+}
+.categories-pg {
+  position: relative;
+  background-color: var(--color-gray-200);
+  width: 100%;
+  height: 2651px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 70.03px;
+  color: var(--color-gainsboro-100);
+  font-family: var(--font-bowlby-one);
+}
+
+
+
+
+.did-you-know-that-turtles-hav-parent{
+	-webkit-animation: slide-in-bck-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-bck-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes slide-in-bck-center {
+  0% {
+    -webkit-transform: translateZ(600px);
+            transform: translateZ(600px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bck-center {
+  0% {
+    -webkit-transform: translateZ(600px);
+            transform: translateZ(600px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}

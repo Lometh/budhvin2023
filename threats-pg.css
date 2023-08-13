@@ -1,0 +1,821 @@
+@keyframes shadow-drop-bottom {
+  0% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+  to {
+    box-shadow: 0 12px 20px -12px rgb(0 0 0/35%);
+  }
+}
+@keyframes shadow-pop-tr {
+  0% {
+    box-shadow: 0 0 rgba(62, 62, 62, 0.18), 0 0 rgba(62, 62, 62, 0.18),
+      0 0 rgba(62, 62, 62, 0.18), 0 0 rgba(62, 62, 62, 0.18),
+      0 0 rgba(62, 62, 62, 0.18), 0 0 rgba(62, 62, 62, 0.18),
+      0 0 rgba(62, 62, 62, 0.18), 0 0 rgba(62, 62, 62, 0.18);
+    transform: translateX(0) translateY(0);
+  }
+  to {
+    box-shadow: 1px -1px rgba(62, 62, 62, 0.18), 2px -2px rgba(62, 62, 62, 0.18),
+      3px -3px rgba(62, 62, 62, 0.18), 4px -4px rgba(62, 62, 62, 0.18),
+      5px -5px rgba(62, 62, 62, 0.18), 6px -6px rgba(62, 62, 62, 0.18),
+      7px -7px rgba(62, 62, 62, 0.18), 8px -8px rgba(62, 62, 62, 0.18);
+    transform: translateX(-8px) translateY(8px);
+  }
+}
+.threats-banner-img {
+  position: absolute;
+  top: 280px;
+  left: calc(50% - 634.5px);
+  width: 1269px;
+  height: 485px;
+  object-fit: cover;
+}
+.threats-to-turtles,
+.threats-to-turtles1 {
+  margin: 0;
+  position: absolute;
+  letter-spacing: -0.02em;
+  display: inline-block;
+}
+.threats-to-turtles {
+  top: 0;
+  left: calc(50% - 403.5px);
+  font-size: inherit;
+  line-height: 98.9%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: inherit;
+  width: 807px;
+}
+.threats-to-turtles1 {
+  top: 116px;
+  left: calc(50% - 459.5px);
+  font-size: var(--font-size-xl);
+  line-height: 139.9%;
+  font-weight: 600;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  width: 919px;
+  height: 106px;
+}
+.threats-to-turtles-parent {
+  position: absolute;
+  top: 0;
+  left: 175px;
+  width: 919px;
+  height: 222px;
+}
+.threats-banner-img-parent {
+  position: absolute;
+  top: 245px;
+  left: 85px;
+  width: 1269px;
+  height: 765px;
+  font-size: 70.03px;
+  color: var(--color-gainsboro-100);
+  font-family: var(--font-bowlby-one);
+}
+.lets-go-in,
+.the-main-threats {
+  position: absolute;
+  letter-spacing: -0.02em;
+  line-height: 139.9%;
+  font-weight: 600;
+}
+.the-main-threats {
+  top: 1074px;
+  left: calc(50% - 202px);
+  font-size: var(--font-size-3xl);
+}
+.lets-go-in {
+  top: 0;
+  left: calc(50% - 75px);
+}
+.lets-go-in-detail-wrapper {
+  position: absolute;
+  top: 2047px;
+  left: 645px;
+  width: 150px;
+  height: 28px;
+  font-size: var(--font-size-xl);
+}
+.destruction-of-coral {
+  position: absolute;
+  top: 476.53px;
+  left: calc(50% - 153.18px);
+  letter-spacing: -0.02em;
+  line-height: 139.9%;
+  font-weight: 600;
+  display: inline-block;
+  width: 306.36px;
+}
+.habitat-loss-and {
+  position: absolute;
+  top: 21.3px;
+  left: 21.08px;
+  line-height: 96.9%;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 137.51px;
+}
+.habitat-loss-and-degradation-wrapper {
+  position: absolute;
+  top: 345.84px;
+  left: 11.77px;
+  border-radius: 14.13px;
+  background-color: var(--color-gray-200);
+  width: 181.78px;
+  height: 85.71px;
+  overflow: hidden;
+}
+.main-threat-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 12.48px;
+  width: 306.36px;
+  height: 443.53px;
+  background-image: url(./public/main-threat-1@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  font-size: 14.13px;
+  color: var(--color-gainsboro-100);
+  font-family: var(--font-bowlby-one);
+}
+.main-threat-1:hover,
+.main-threat-2:hover,
+.main-threat-3:hover {
+  animation: 1s ease 0s 1 normal forwards shadow-drop-bottom;
+  opacity: 1;
+}
+.destruction-of-coral-reefs-wh-parent {
+  position: absolute;
+  top: 1183px;
+  left: 160px;
+  width: 306.36px;
+  height: 576.53px;
+  text-align: left;
+  font-size: 18.07px;
+}
+.climate-change {
+  position: absolute;
+  top: 29.62px;
+  left: 21.93px;
+  line-height: 96.9%;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 137.51px;
+}
+.main-threat-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 12.48px;
+  width: 306.36px;
+  height: 443.53px;
+  background-image: url(./public/main-threat-2@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  font-size: 14.13px;
+  color: var(--color-gainsboro-100);
+  font-family: var(--font-bowlby-one);
+}
+.climate-change-poses-a-signifi-parent {
+  position: absolute;
+  top: 1183px;
+  left: 566.36px;
+  width: 306.36px;
+  height: 651.53px;
+  text-align: left;
+  font-size: 18.07px;
+}
+.illegal-wildlife-trade {
+  position: absolute;
+  top: 21.3px;
+  left: 21.9px;
+  line-height: 96.9%;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 137.51px;
+}
+.main-threat-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 12.48px;
+  width: 306.36px;
+  height: 443.53px;
+  background-image: url(./public/main-threat-3@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  font-size: 14.13px;
+  color: var(--color-gainsboro-100);
+  font-family: var(--font-bowlby-one);
+}
+.turtle-eggs-in-particular-ar-parent {
+  position: absolute;
+  top: 1183px;
+  left: 972.72px;
+  width: 306.36px;
+  height: 551.53px;
+  text-align: left;
+  font-size: 18.07px;
+}
+.section-img-icon {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 558px);
+  border-radius: var(--br-mini) var(--br-mini) 0 0;
+  width: 1118px;
+  height: 258px;
+  object-fit: cover;
+}
+.habitat-loss-and1,
+.threat-1 {
+  position: absolute;
+  line-height: 96.9%;
+}
+.habitat-loss-and1 {
+  top: 340px;
+  left: calc(50% - 351px);
+  font-size: var(--font-size-21xl);
+  text-transform: uppercase;
+  font-family: var(--font-bowlby-one);
+}
+.threat-1 {
+  top: 295px;
+  left: calc(50% - 40px);
+  font-size: var(--font-size-2xl);
+  font-weight: 500;
+  text-align: left;
+}
+.for-solutions-or,
+.the-loss-and {
+  position: absolute;
+  top: 423px;
+  left: calc(50% - 530px);
+  letter-spacing: -0.02em;
+  line-height: 150%;
+  font-weight: 500;
+  display: inline-block;
+  width: 1061px;
+}
+.for-solutions-or {
+  text-decoration: none;
+  top: 640px;
+  color: inherit;
+}
+.table-child,
+.table-item {
+  position: absolute;
+  box-sizing: border-box;
+}
+.table-child {
+  top: 53.32px;
+  left: 0.44px;
+  border-top: 0.9px solid var(--color-white);
+  width: 1130.01px;
+  height: 0.9px;
+}
+.table-item {
+  top: -0.45px;
+  left: 564.77px;
+  border-right: 0.9px solid var(--color-white);
+  width: 0.9px;
+  height: 600.39px;
+}
+.consequences {
+  position: absolute;
+  top: 9.86px;
+  left: calc(50% - 351.27px);
+  font-size: 19.71px;
+  letter-spacing: -0.02em;
+  line-height: 150%;
+  font-weight: 500;
+  font-family: var(--font-inter);
+  text-align: center;
+  display: inline-block;
+  width: 137.1px;
+}
+.nesting-site-destruction {
+  margin: 0;
+  padding-left: var(--padding-5xl);
+}
+.nesting-site-destruction-container {
+  position: absolute;
+  top: 83.34px;
+  left: calc(50% - 534.08px);
+  letter-spacing: -0.02em;
+  line-height: 150%;
+  font-weight: 500;
+  display: inline-block;
+  width: 496.44px;
+}
+.disruption-of-foraging-container,
+.fragmentation-of-habitat-container,
+.preventions,
+.protected-areas-and-container,
+.public-awareness-and-container {
+  position: absolute;
+  top: 136.21px;
+  left: calc(50% + 33.16px);
+  letter-spacing: -0.02em;
+  line-height: 150%;
+  font-weight: 500;
+  display: inline-block;
+  width: 496.44px;
+}
+.disruption-of-foraging-container,
+.fragmentation-of-habitat-container,
+.preventions,
+.public-awareness-and-container {
+  top: 355.76px;
+}
+.disruption-of-foraging-container,
+.fragmentation-of-habitat-container,
+.preventions {
+  top: 247.33px;
+  left: calc(50% - 534.08px);
+}
+.fragmentation-of-habitat-container,
+.preventions {
+  top: 384.43px;
+}
+.preventions {
+  top: 9.86px;
+  left: calc(50% + 213.27px);
+  font-size: 19.71px;
+  font-family: var(--font-inter);
+  text-align: center;
+  width: 137.1px;
+}
+.table {
+  position: absolute;
+  top: -0.45px;
+  left: -0.45px;
+  background-color: var(--color-gray-200);
+  border: 0.9px solid var(--color-white);
+  box-sizing: border-box;
+  width: 1130.89px;
+  height: 600.39px;
+  text-align: left;
+  font-size: var(--font-inherit);
+  font-family: var(--font-inherit);
+}
+.for-solutions-or-conservation-parent,
+.section-1 {
+  position: absolute;
+  top: 647px;
+  left: 0;
+  width: 1129.99px;
+  height: 669px;
+}
+.section-1 {
+  top: 2192px;
+  left: 154px;
+  width: 1130px;
+  height: 1316px;
+}
+.climate-change1,
+.threat-2 {
+  position: absolute;
+  line-height: 96.9%;
+}
+.climate-change1 {
+  top: 340px;
+  left: calc(50% - 198px);
+  font-size: var(--font-size-21xl);
+  text-transform: uppercase;
+  font-family: var(--font-bowlby-one);
+}
+.threat-2 {
+  top: 295px;
+  left: calc(50% - 40px);
+  font-size: var(--font-size-2xl);
+  font-weight: 500;
+}
+.httpswwwworldwildlifeorg {
+  color: var(--color-yellowgreen);
+}
+.for-solutions-or-container {
+  text-decoration: none;
+  position: absolute;
+  top: 757px;
+  left: calc(50% - 530px);
+  letter-spacing: -0.02em;
+  line-height: 150%;
+  font-weight: 500;
+  display: inline-block;
+  width: 1061px;
+  height: 34px;
+  cursor: pointer;
+  color: inherit;
+}
+.line-div {
+  position: absolute;
+  top: -0.45px;
+  left: 564.77px;
+  border-right: 0.9px solid var(--color-white);
+  box-sizing: border-box;
+  width: 0.9px;
+  height: 709.9px;
+}
+.consequences1,
+.temperature-dependent-sex-dete-container {
+  position: absolute;
+  letter-spacing: -0.02em;
+  line-height: 150%;
+  font-weight: 500;
+  display: inline-block;
+}
+.consequences1 {
+  top: 9.86px;
+  left: calc(50% - 351.28px);
+  font-size: 19.71px;
+  font-family: var(--font-inter);
+  text-align: center;
+  width: 137.1px;
+}
+.temperature-dependent-sex-dete-container {
+  top: 181px;
+  left: calc(50% - 530.08px);
+  width: 496.44px;
+}
+.adapting-nesting-areas-container,
+.conservation-of-carbon-sink-container,
+.mitigating-greenhouse-gas-container,
+.sea-level-rise-container {
+  position: absolute;
+  top: 99.21px;
+  left: calc(50% + 33.15px);
+  letter-spacing: -0.02em;
+  line-height: 150%;
+  font-weight: 500;
+  display: inline-block;
+  width: 496.44px;
+}
+.adapting-nesting-areas-container,
+.conservation-of-carbon-sink-container,
+.sea-level-rise-container {
+  top: 338.76px;
+}
+.adapting-nesting-areas-container,
+.sea-level-rise-container {
+  top: 497px;
+  left: calc(50% + 33.55px);
+}
+.sea-level-rise-container {
+  top: 393.66px;
+  left: calc(50% - 530.45px);
+}
+.table1 {
+  position: absolute;
+  top: -0.45px;
+  left: -0.45px;
+  background-color: var(--color-gray-200);
+  border: 0.9px solid var(--color-white);
+  box-sizing: border-box;
+  width: 1130.9px;
+  height: 709.9px;
+  text-align: left;
+  font-size: var(--font-inherit);
+  font-family: var(--font-inherit);
+}
+.for-solutions-or-conservation-group,
+.srection-2 {
+  position: absolute;
+  top: 647px;
+  left: 0;
+  width: 1130px;
+  height: 791px;
+}
+.srection-2 {
+  top: 3693px;
+  left: 154px;
+  height: 1438px;
+}
+.if-you-are {
+  position: absolute;
+  top: 7267px;
+  left: calc(50% - 531px);
+  letter-spacing: -0.02em;
+  line-height: 150%;
+  font-weight: 500;
+  display: inline-block;
+  width: 1061px;
+  height: 50px;
+}
+.illegal-wildlife-trade1 {
+  position: absolute;
+  top: 340px;
+  left: calc(50% - 461px);
+  font-size: var(--font-size-21xl);
+  line-height: 96.9%;
+  text-transform: uppercase;
+  font-family: var(--font-bowlby-one);
+}
+.for-solutions-or1 {
+  color: var(--color-white);
+}
+.httpswwwturtleconservancy {
+  text-decoration: underline;
+}
+.for-solutions-or-container1 {
+  text-decoration: none;
+  position: absolute;
+  top: 1109px;
+  left: calc(50% - 530px);
+  letter-spacing: -0.02em;
+  line-height: 150%;
+  font-weight: 500;
+  display: inline-block;
+  width: 1061px;
+  height: 50px;
+  cursor: pointer;
+  color: inherit;
+}
+.table-child2 {
+  position: absolute;
+  top: -0.45px;
+  left: 564.55px;
+  border-right: 0.9px solid var(--color-white);
+  box-sizing: border-box;
+  width: 0.9px;
+  height: 1039.9px;
+}
+.population-decline-poaching-container {
+  position: absolute;
+  top: 109px;
+  left: calc(50% - 530.08px);
+  letter-spacing: -0.02em;
+  line-height: 150%;
+  font-weight: 500;
+  display: inline-block;
+  width: 496.44px;
+}
+.collaboration-and-internationa-container,
+.disruption-of-ecosystems-container,
+.loss-of-genetic-container,
+.monitoring-and-reporting-container {
+  position: absolute;
+  top: 578px;
+  left: calc(50% + 33.55px);
+  letter-spacing: -0.02em;
+  line-height: 150%;
+  font-weight: 500;
+  display: inline-block;
+  width: 496.44px;
+}
+.disruption-of-ecosystems-container,
+.loss-of-genetic-container,
+.monitoring-and-reporting-container {
+  top: 817px;
+}
+.disruption-of-ecosystems-container,
+.loss-of-genetic-container {
+  top: 299.66px;
+  left: calc(50% - 530.45px);
+}
+.loss-of-genetic-container {
+  top: 490px;
+}
+.table2 {
+  position: absolute;
+  top: -0.45px;
+  left: -0.45px;
+  background-color: var(--color-gray-200);
+  border: 0.9px solid var(--color-white);
+  box-sizing: border-box;
+  width: 1130.9px;
+  height: 1039.9px;
+  text-align: left;
+  font-size: var(--font-inherit);
+  color: var(--color-white);
+  font-family: var(--font-inherit);
+}
+.for-solutions-or-conservation-container {
+  position: absolute;
+  top: 647px;
+  left: 0;
+  width: 1130px;
+  height: 1159px;
+  color: var(--color-yellowgreen);
+}
+.section-3 {
+  position: absolute;
+  top: 5316px;
+  left: 154px;
+  width: 1130px;
+  height: 1806px;
+}
+.bentota-hatchery {
+  position: relative;
+  letter-spacing: -0.02em;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.bentota-link,
+.kosgoda-link {
+  text-decoration: none;
+  position: absolute;
+  top: 7367px;
+  left: 220px;
+  border-radius: var(--br-mini);
+  width: 437px;
+  height: 255px;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-4xl);
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-end;
+  background-image: url(./public/bentota-link@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: left;
+  font-size: var(--font-size-2xl);
+  color: inherit;
+  font-family: var(--font-bowlby-one);
+}
+.bentota-link:hover,
+.kosgoda-link:hover {
+  cursor: pointer;
+  animation: 1s ease 0s 1 normal forwards shadow-pop-tr;
+  opacity: 1;
+}
+.kosgoda-link {
+  left: 782px;
+  background-image: url(./public/kosgoda-link@3x.png);
+}
+.footer-item {
+  align-self: stretch;
+  position: relative;
+  border-top: 1px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  height: 1px;
+}
+.turtle-hatchery2 {
+  text-decoration: none;
+  position: relative;
+  line-height: 96.9%;
+  text-transform: uppercase;
+  color: inherit;
+  display: inline-block;
+  width: 274px;
+  flex-shrink: 0;
+}
+.privacy-policy1 {
+  position: relative;
+  font-size: var(--font-size-lg);
+  line-height: 164.4%;
+  font-family: var(--font-inter);
+  text-align: right;
+}
+.turtle-hatchery-container {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  padding: 0 0 var(--padding-7xs);
+  align-items: center;
+  justify-content: space-between;
+}
+.footer1,
+.turtle-hatchery3 {
+  position: absolute;
+  font-family: var(--font-bowlby-one);
+  text-align: left;
+}
+.footer1 {
+  top: 7880px;
+  left: calc(50% - 669px);
+  width: 1338.05px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--gap-xl);
+  font-size: var(--font-size-3xl);
+  color: var(--color-gainsboro-100);
+}
+.turtle-hatchery3 {
+  margin: 0;
+  top: 1px;
+  left: calc(50% - 108.61px);
+  font-size: 20.94px;
+  line-height: 96.9%;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.frame-item {
+  position: absolute;
+  top: 43.35px;
+  left: calc(50% - 571px);
+  width: 1142px;
+  height: 0.94px;
+  object-fit: cover;
+}
+.categories1,
+.hikkaduwa-hatchery1,
+.home1,
+.other-hatcheries1,
+.purcahse-donation1,
+.threats1 {
+  text-decoration: none;
+  position: absolute;
+  top: 68.15px;
+  left: 112.32px;
+  font-weight: 600;
+  color: inherit;
+  cursor: pointer;
+}
+.categories1:hover,
+.hikkaduwa-hatchery1:hover,
+.home1:hover,
+.other-hatcheries1:hover,
+.purcahse-donation1:hover,
+.threats1:hover {
+  color: var(--color-yellow-100);
+  cursor: pointer;
+}
+.categories1,
+.hikkaduwa-hatchery1,
+.other-hatcheries1,
+.purcahse-donation1,
+.threats1 {
+  left: 207.79px;
+}
+.hikkaduwa-hatchery1,
+.other-hatcheries1,
+.purcahse-donation1,
+.threats1 {
+  left: 345.39px;
+}
+.other-hatcheries1,
+.purcahse-donation1,
+.threats1 {
+  left: 561.61px;
+}
+.other-hatcheries1,
+.purcahse-donation1 {
+  left: 672.99px;
+}
+.purcahse-donation1 {
+  left: 858.32px;
+}
+.frame-nav,
+.threats-pg {
+  text-align: center;
+  font-family: var(--font-inter);
+}
+.frame-nav {
+  position: absolute;
+  top: 55.22px;
+  left: calc(50% - 571px);
+  width: 1142px;
+  height: 88.75px;
+  font-size: 16.85px;
+  color: var(--color-gainsboro-100);
+}
+.threats-pg {
+  position: relative;
+  background-color: var(--color-gray-200);
+  width: 100%;
+  height: 8034px;
+  overflow: hidden;
+  font-size: var(--font-size-lgi);
+  color: var(--color-white);
+}
+
+.threats-to-turtles{
+	-webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+ @-webkit-keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+            transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+            transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+

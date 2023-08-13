@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./tickets-pg.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bowlby One:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Permanent Marker:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="tickets-pg">
+      <nav class="turtle-hatchery-container" id="nav">
+        <h2 class="turtle-hatchery2" id="Logo" logo="30px">TURTLE HATCHERY</h2>
+        <img class="frame-item" alt="" src="./public/divider2@2x.png" />
+
+        <a class="home1" href="/" id="home">Home</a>
+        <a class="home1" href="./categories-pg.html" id="categories"
+          >Categories</a
+        >
+        <a class="home1" href="./hikkaduwa-pg.html" id="hikkaduwaHatchery"
+          >Hikkaduwa hatchery</a
+        >
+        <a class="home1" href="./threats-pg.html" id="threats">Threats</a>
+        <a class="home1" href="./locations.html" id="otherHatcheries"
+          >Other hatcheries</a
+        >
+        <a class="home1" href="./donation-pg.html" id="purcahseDonation"
+          >Purcahse & Donation</a
+        >
+      </nav>
+      <div class="purchase-your-parent">
+        <h4 class="purchase-your" id="Purchase your">PURCHASE YOUR</h4>
+        <h1 class="tickets" id="Tickets">TICKETS</h1>
+      </div>
+      <button class="continue-wrapper" autofocus>
+        <div class="continue">Continue</div>
+      </button>
+    </div>
+
+    <script>
+      var continueBtn = document.querySelector(".continue-wrapper");
+      continueBtn.addEventListener("click", function (e) {
+        window.location.href = "./tickets-continue-pg.html";
+      });
+      
+      var home = document.getElementById("home");
+      if (home) {
+        home.addEventListener("click", function (e) {
+          window.location.href = "/";
+        });
+      }
+      
+      var categories = document.getElementById("categories");
+      if (categories) {
+        categories.addEventListener("click", function (e) {
+          window.location.href = "./categories-pg.html";
+        });
+      }
+      
+      var hikkaduwaHatchery = document.getElementById("hikkaduwaHatchery");
+      if (hikkaduwaHatchery) {
+        hikkaduwaHatchery.addEventListener("click", function (e) {
+          window.location.href = "./hikkaduwa-pg.html";
+        });
+      }
+      
+      var threats = document.getElementById("threats");
+      if (threats) {
+        threats.addEventListener("click", function (e) {
+          window.location.href = "./threats-pg.html";
+        });
+      }
+      
+      var otherHatcheries = document.getElementById("otherHatcheries");
+      if (otherHatcheries) {
+        otherHatcheries.addEventListener("click", function (e) {
+          window.location.href = "./locations.html";
+        });
+      }
+      
+      var purcahseDonation = document.getElementById("purcahseDonation");
+      if (purcahseDonation) {
+        purcahseDonation.addEventListener("click", function (e) {
+          window.location.href = "./donation-pg.html";
+        });
+      }
+      </script>
+  </body>
+</html>

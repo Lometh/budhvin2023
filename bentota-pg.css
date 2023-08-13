@@ -1,0 +1,592 @@
+@keyframes scale-up {
+  0% {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes shadow-drop-bottom {
+  0% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+  to {
+    box-shadow: 0 12px 20px -12px rgb(0 0 0/35%);
+  }
+}
+.image-1-icon {
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 900px;
+  object-fit: cover;
+}
+.image-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1440px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.bentota-is-a,
+.rewild-your-lifestyle {
+  position: absolute;
+  top: 580px;
+  left: 52px;
+  line-height: 96.9%;
+}
+.bentota-is-a {
+  top: 673px;
+  left: 50px;
+  font-size: var(--font-size-xl);
+  line-height: 115%;
+  font-weight: 600;
+  font-family: var(--font-poppins);
+  display: inline-block;
+  width: 1085px;
+}
+.section-11 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  width: 1440px;
+  height: 900px;
+}
+.about {
+  position: relative;
+  line-height: 96.9%;
+}
+.learn-more,
+.the-bentota-turtle {
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+}
+.the-bentota-turtle {
+  font-size: var(--font-size-xl);
+  line-height: 135%;
+  font-family: var(--font-poppins);
+  width: 856px;
+}
+.learn-more {
+  line-height: 130%;
+  width: 100px;
+}
+.learn-more-btn,
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+.learn-more-btn {
+  border-radius: var(--br-51xl);
+  background-color: var(--color-white);
+  width: 153px;
+  height: 52px;
+  padding: var(--padding-sm) var(--padding-7xl);
+  align-items: flex-end;
+  font-size: var(--font-size-lg);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+.learn-more-btn:hover {
+  cursor: pointer;
+}
+.section-2 {
+  position: absolute;
+  top: 900px;
+  left: 0;
+  width: 1440px;
+  height: 900px;
+  padding: var(--padding-46xl) var(--padding-31xl) var(--padding-46xl)
+    var(--padding-33xl);
+  align-items: flex-start;
+  gap: 25px;
+  background-image: url(./public/section-2@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.things-you-can {
+  position: absolute;
+  top: 65px;
+  left: 52px;
+  font-size: var(--font-size-51xl);
+  line-height: 96.9%;
+  font-family: var(--font-permanent-marker);
+  color: var(--color-gray-200);
+  text-align: left;
+}
+.in-bentota-there {
+  margin: 0;
+}
+.in-bentota-there-container {
+  position: absolute;
+  top: 158px;
+  left: 50px;
+  font-size: var(--font-size-xl);
+  line-height: 135%;
+  font-weight: 600;
+  color: var(--color-gray-200);
+  text-align: left;
+  display: inline-block;
+  width: 856px;
+}
+.see-more-btn {
+  position: absolute;
+  top: 237px;
+  left: 50px;
+  border-radius: var(--br-51xl);
+  background-color: var(--color-gray-200);
+  width: 153px;
+  height: 52px;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-sm) var(--padding-7xl);
+  box-sizing: border-box;
+  align-items: flex-end;
+  justify-content: flex-start;
+  font-size: var(--font-size-lg);
+  font-family: var(--font-inter);
+}
+.get-up-close-to,
+.madu-river-boat {
+  align-self: stretch;
+  position: relative;
+  line-height: 135%;
+}
+.madu-river-boat {
+  font-weight: 600;
+}
+.get-up-close-to {
+  font-size: 13.54px;
+}
+.day-excursion-to-bentota-from,
+.galle-fort-to-bentota-day-trip,
+.madu-river {
+  position: absolute;
+  top: 364.04px;
+  left: 50px;
+  width: 404.28px;
+  display: flex;
+  flex-direction: column;
+  padding: 275.233154296875px 28.87664794921875px 31.680572509765625px
+    31.58447265625px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--gap-smi);
+  background-image: url(./public/madu-river@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.day-excursion-to-bentota-from,
+.galle-fort-to-bentota-day-trip {
+  left: 485.86px;
+  background-image: url(./public/day-excursion-to-bentota-from-colombo@3x.png);
+}
+.galle-fort-to-bentota-day-trip {
+  left: 921.72px;
+  padding: 275.233154296875px 28.87713623046875px 31.680572509765625px
+    31.583984375px;
+  background-image: url(./public/galle-fort-to-bentota-day-trip@3x.png);
+}
+.section-31 {
+  position: absolute;
+  top: 1800px;
+  left: 0;
+  background-color: var(--color-whitesmoke);
+  width: 1440px;
+  height: 900px;
+  text-align: center;
+  font-size: 22.56px;
+  font-family: var(--font-poppins);
+}
+.location,
+.the-bentota-hatchery {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 96.9%;
+}
+.the-bentota-hatchery {
+  top: 93px;
+  font-size: var(--font-size-xl);
+  line-height: 135%;
+  font-weight: 600;
+  font-family: var(--font-poppins);
+  display: inline-block;
+  width: 654px;
+}
+.see-full-map {
+  position: relative;
+  line-height: 130%;
+  font-weight: 600;
+  display: inline-block;
+  width: 108px;
+}
+.see-full-map-btn {
+  text-decoration: none;
+  position: absolute;
+  top: 172px;
+  left: 0;
+  border-radius: var(--br-51xl);
+  background-color: var(--color-white);
+  width: 165px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  padding: 18px 28px;
+  box-sizing: border-box;
+  align-items: flex-end;
+  justify-content: flex-start;
+  text-align: center;
+  font-size: var(--font-size-lg);
+  color: var(--color-gray-200);
+  font-family: var(--font-inter);
+}
+.learn-more-btn:hover,
+.see-full-map-btn:hover {
+  animation: 1s ease 0s 1 normal forwards scale-up;
+  opacity: 1;
+}
+.location-parent {
+  position: relative;
+  width: 654px;
+  height: 232px;
+}
+.section-4 {
+  position: absolute;
+  top: 2700px;
+  left: 0;
+  width: 1440px;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  padding: 617px var(--padding-31xl) 51px var(--padding-33xl);
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-end;
+  background-image: url(./public/section-4@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.bentota-is-a1,
+.more-hatcheries {
+  position: absolute;
+  color: var(--color-gray-200);
+}
+.more-hatcheries {
+  top: 65px;
+  left: 52px;
+  font-size: var(--font-size-51xl);
+  line-height: 96.9%;
+  font-family: var(--font-permanent-marker);
+}
+.bentota-is-a1 {
+  top: 158px;
+  left: 50px;
+  font-size: var(--font-size-xl);
+  line-height: 135%;
+  font-weight: 600;
+  display: inline-block;
+  width: 856px;
+}
+.see-more-btn1 {
+  position: absolute;
+  top: 237px;
+  left: 50px;
+  border-radius: var(--br-51xl);
+  background-color: var(--color-gray-200);
+  width: 153px;
+  height: 52px;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-sm) var(--padding-7xl);
+  box-sizing: border-box;
+  align-items: flex-end;
+  justify-content: flex-start;
+  text-align: center;
+  font-size: var(--font-size-lg);
+  font-family: var(--font-inter);
+}
+.see-more-btn1:hover,
+.see-more-btn2:hover {
+  animation: 1s ease 0s 1 normal forwards shadow-drop-bottom;
+  opacity: 1;
+}
+.popular-for-those {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-mini);
+  line-height: 135%;
+  font-weight: 700;
+}
+.bentota-beach,
+.brief-garden,
+.madu-ganga {
+  position: absolute;
+  top: 364.04px;
+  left: 50px;
+  width: 404.28px;
+  display: flex;
+  flex-direction: column;
+  padding: 268.955322265625px 28.87664794921875px 37.680572509765625px
+    31.58447265625px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: var(--gap-xl);
+  background-image: url(./public/bentota-beach@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.brief-garden,
+.madu-ganga {
+  left: 485.86px;
+  padding: 251.233154296875px 28.87664794921875px 35.680572509765625px
+    31.58447265625px;
+  align-items: center;
+  gap: var(--gap-lgi);
+  background-image: url(./public/brief-garden@3x.png);
+  text-align: center;
+}
+.madu-ganga {
+  left: 921.72px;
+  padding: 269.233154296875px 28.87713623046875px 37.680572509765625px
+    31.583984375px;
+  background-image: url(./public/madu-ganga@3x.png);
+}
+.section-5 {
+  position: absolute;
+  top: 3600px;
+  left: 0;
+  background-color: var(--color-whitesmoke);
+  width: 1440px;
+  height: 900px;
+  font-size: 22.56px;
+  font-family: var(--font-poppins);
+}
+.other-experience {
+  position: absolute;
+  top: 65px;
+  left: 52px;
+  font-size: var(--font-size-51xl);
+  line-height: 96.9%;
+}
+.got-more-time {
+  position: absolute;
+  top: 158px;
+  left: 50px;
+  line-height: 135%;
+  font-weight: 600;
+  font-family: var(--font-poppins);
+  display: inline-block;
+  width: 703px;
+}
+.see-more-btn2 {
+  position: absolute;
+  top: 210px;
+  left: 50px;
+  border-radius: var(--br-51xl);
+  background-color: var(--color-white);
+  width: 153px;
+  height: 52px;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-sm) var(--padding-7xl);
+  box-sizing: border-box;
+  align-items: flex-end;
+  justify-content: flex-start;
+  text-align: center;
+  font-size: var(--font-size-lg);
+  color: var(--color-gray-200);
+  font-family: var(--font-inter);
+}
+.places-to-explore,
+.taj-bentota-resort {
+  position: absolute;
+  line-height: 135%;
+  display: inline-block;
+}
+.places-to-explore {
+  top: 620px;
+  left: 875px;
+  font-size: var(--font-size-11xl);
+  width: 494px;
+}
+.taj-bentota-resort {
+  top: -20px;
+  left: -50px;
+  font-weight: 600;
+  width: 343px;
+}
+.taj-bentota-resort-spa-bent-wrapper {
+  position: relative;
+  width: 343px;
+  height: 27px;
+}
+.section-6,
+.section-tag-bentota-resort-img {
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.section-tag-bentota-resort-img {
+  top: 356.5px;
+  left: 50.5px;
+  border-radius: 10px;
+  width: 786px;
+  height: 470px;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  box-sizing: border-box;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-image: url(./public/section-tag-bentota-resort-img@3x.png);
+  text-align: right;
+  font-family: var(--font-poppins);
+}
+.section-tag-bentota-resort-img:hover {
+  animation: 1s ease 0s 1 normal forwards scale-up;
+  opacity: 1;
+}
+.section-6 {
+  top: 4500px;
+  left: calc(50% - 720px);
+  width: 1440px;
+  height: 900px;
+  background-image: url(./public/section-6@3x.png);
+  font-size: var(--font-size-xl);
+}
+.footer-image-icon {
+  position: absolute;
+  top: 0;
+  left: 187px;
+  width: 1934px;
+  height: 716px;
+}
+.facebook,
+.turtle-island-all {
+  line-height: 100%;
+  font-weight: 500;
+}
+.turtle-island-all {
+  position: absolute;
+  top: 286px;
+  left: 268px;
+  font-size: var(--font-size-smi);
+}
+.facebook {
+  position: relative;
+  text-decoration: underline;
+}
+.follow-us,
+.social-links {
+  position: absolute;
+  left: 1226px;
+}
+.social-links {
+  top: 358px;
+  width: 72px;
+  height: 89px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 22px;
+}
+.follow-us {
+  top: 327px;
+  line-height: 100%;
+}
+.privacy-and-cookies,
+.terms-of-use {
+  position: relative;
+  text-decoration: underline;
+  line-height: 100%;
+}
+.privacy-and-cookies {
+  align-self: stretch;
+}
+.links {
+  position: absolute;
+  top: 349px;
+  left: 268px;
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 26px;
+}
+.bentota-lanka {
+  align-self: stretch;
+  position: relative;
+  line-height: 96.9%;
+}
+.logo {
+  top: 207px;
+  left: 268px;
+  border: 1.9px solid var(--color-white);
+  box-sizing: border-box;
+  width: 238px;
+  display: flex;
+  flex-direction: column;
+  padding: 13.489958763122559px 20.09316062927246px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  text-align: center;
+  font-size: 26.98px;
+  font-family: var(--font-permanent-marker);
+}
+.footer2,
+.logo,
+.logo1 {
+  position: absolute;
+}
+.footer2 {
+  top: 5477px;
+  left: -187px;
+  width: 1934px;
+  height: 716px;
+  font-size: var(--font-size-mini);
+  font-family: var(--font-inter);
+}
+.logo1 {
+  top: 37.91px;
+  left: 628px;
+  border: 1.5px solid var(--color-white);
+  box-sizing: border-box;
+  width: 184px;
+  height: 46.19px;
+  display: flex;
+  flex-direction: column;
+  padding: 10.4291410446167px 15.65182113647461px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  text-align: center;
+  font-size: 20.86px;
+}
+.bentota-pg {
+  position: relative;
+  background-color: var(--color-whitesmoke);
+  width: 100%;
+  height: 6193px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-51xl);
+  color: var(--color-white);
+  font-family: var(--font-permanent-marker);
+}

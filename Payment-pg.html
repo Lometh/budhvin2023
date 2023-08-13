@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Payment-pg.css">
+  <title>Payment</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="header-title">Turtle Hatchery</h1>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="summary-section">
+      <h2>Summary</h2>
+      <table id="summaryTable">
+        <script>
+// Retrieve summary data from local storage
+const summaryData = JSON.parse(localStorage.getItem("summaryData"));
+
+function populateSummaryTable() {
+  const summaryTable = document.getElementById("summaryTable");
+  
+  const tableRows = [
+    { label: "Date", value: summaryData.date },
+    { label: "Time", value: summaryData.duration },
+    { label: "Tickets", value: `${summaryData.slAdultCount} SL Adults, ${summaryData.slChildCount} SL Children, ${summaryData.foreignAdultCount} Foreigner Adults, ${summaryData.foreignChildCount} Foreigner Children, ${summaryData.infantCount} Infants` },
+    { label: "Total Payable", value: summaryData.totalPayable }
+  ];
+
+  tableRows.forEach(row => {
+    const newRow = summaryTable.insertRow();
+    const labelCell = newRow.insertCell(0);
+    const valueCell = newRow.insertCell(1);
+    
+    labelCell.textContent = row.label;
+    valueCell.textContent = row.value;
+  });
+}
+
+// Function to enable payment button if form is valid
+function checkFormValidity() {
+  const paymentButton = document.getElementById("paymentButton");
+  const formInputs = document.querySelectorAll(".input-group input");
+  const isValid = Array.from(formInputs).every(input => input.checkValidity());
+  
+  paymentButton.disabled = !isValid;
+}
+
+// Add event listeners to form inputs
+document.querySelectorAll(".input-group input").forEach(input => {
+  input.addEventListener("input", checkFormValidity);
+});
+
+// Populate the summary table
+populateSummaryTable();
+
+// Add event listener to form submission
+document.getElementById("paymentForm").addEventListener("submit", event => {
+  event.preventDefault();
+  // Your code to handle the form submission, e.g., redirect to the Confirmation page
+});
+
+        </script>
+      </table>
+    </div>
+
+    <div class="payment-form">
+      <h2>Payment Details</h2>
+      <form id="paymentForm">
+        <div class="input-group">
+          <label for="cardNumber">Card Number</label>
+          <input type="number" id="cardNumber" name="cardNumber" required>
+        </div>
+
+        <div class="input-group">
+          <label for="expiryDate">Expiry Date</label>
+          <input type="date" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+        </div>
+
+        <div class="input-group">
+          <label for="cvc">CVC / CVV</label>
+          <input type="number" id="cvc" name="cvc" required>
+        </div>
+
+        <div class="input-group">
+          <label for="nameOnCard">Name on Card</label>
+          <input type="text" id="nameOnCard" name="nameOnCard" required>
+        </div>
+
+        <button id="payButton" type="submit" enabled>Pay <span id="amount">0</span> USD</button>
+      </form>
+    </div>
+  </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+  const summaryData = JSON.parse(localStorage.getItem("summaryData"));
+  if (summaryData) {
+    // Load summary table data
+    const summaryTable = document.getElementById("summaryTable");
+    // Populate the table rows based on summaryData
+    
+    // Load amount to pay
+    const amountSpan = document.getElementById("amount");
+    amountSpan.textContent = summaryData.totalPayable.toFixed(2);
+  }
+
+  const paymentForm = document.getElementById("paymentForm");
+  const payButton = document.getElementById("payButton");
+
+  paymentForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    // Perform form validation here
+
+    // If form is valid, enable the pay button
+    payButton.removeAttribute("disabled");
+
+    // Redirect to Confirmation page on button click
+    payButton.addEventListener("click", () => {
+      window.location.href ="Confirmation-pg.html"
+    });
+  });
+});
+    </script>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 Turtle Hatchery. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="Payment-pg.js"></script>
+</body>
+</html>

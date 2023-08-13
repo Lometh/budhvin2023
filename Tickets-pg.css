@@ -1,0 +1,115 @@
+.turtle-hatchery2 {
+    margin: 0;
+    position: relative;
+    font-size: 20.94px;
+    line-height: 96.9%;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: var(--font-bowlby-one);
+    text-align: left;
+  }
+  .frame-item {
+    position: relative;
+    width: 1142px;
+    height: 0.94px;
+    object-fit: cover;
+  }
+  .home1 {
+    text-decoration: none;
+    position: relative;
+    font-weight: 600;
+    color: inherit;
+    cursor: pointer;
+  }
+  .home1:hover {
+    color: var(--color-yellow-100);
+    cursor: pointer;
+  }
+  .turtle-hatchery-container {
+    margin: 0;
+    position: absolute;
+    top: 55.22px;
+    left: calc(50% - 571px);
+    width: 1142px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1px 0;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    text-align: center;
+    font-size: 16.85px;
+    color: var(--color-gainsboro-100);
+    font-family: var(--font-inter);
+  }
+  .purchase-your,
+  .tickets {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    letter-spacing: -0.02em;
+    line-height: 98.9%;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: inherit;
+  }
+  .tickets {
+    font-size: 90.03px;
+  }
+  .purchase-your-parent {
+    position: absolute;
+    top: 318px;
+    left: 517px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .continue {
+    position: relative;
+    font-size: var(--font-size-2xl);
+    letter-spacing: -0.02em;
+    line-height: 98.9%;
+    text-transform: uppercase;
+    font-family: var(--font-bowlby-one);
+    color: var(--color-gray-200);
+    text-align: center;
+  }
+  .continue-wrapper {
+    cursor: pointer;
+    border: 0;
+    padding: 25px 39px;
+    background-color: var(--color-gainsboro-100);
+    position: absolute;
+    top: 500px;
+    left: 622px;
+    border-radius: var(--br-51xl);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .continue-wrapper:hover {
+    background-color: #e9f76f;
+  }
+  .continue-wrapper:active {
+    background-color: #b3c90b;
+  }
+  .tickets-pg {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+    background-image: url(./public/fullwidthimage@2x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    text-align: center;
+    font-size: 30.03px;
+    color: var(--color-white);
+    font-family: var(--font-bowlby-one);
+  }
+  

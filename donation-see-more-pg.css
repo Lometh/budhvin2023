@@ -1,0 +1,303 @@
+.below-are-some1 {
+  margin: 0;
+  position: absolute;
+  top: 245px;
+  left: calc(50% - 332px);
+  letter-spacing: -0.02em;
+  line-height: 139.9%;
+  font-weight: 600;
+  display: inline-block;
+  width: 664px;
+  height: 39px;
+}
+.section-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 267.77px;
+  height: 308.66px;
+  object-fit: cover;
+}
+.rs-18999,
+.t-shirt-medium {
+  position: absolute;
+  top: 320.68px;
+  left: 0;
+  letter-spacing: -0.02em;
+  line-height: 139.9%;
+  font-weight: 500;
+}
+.rs-18999 {
+  top: 356.76px;
+  font-size: 19.24px;
+  font-weight: 600;
+}
+.section,
+.section1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 267.77px;
+  height: 383.76px;
+}
+.section10:hover,
+.section11:hover,
+.section1:hover,
+.section2:hover,
+.section3:hover,
+.section4:hover,
+.section5:hover,
+.section6:hover,
+.section7:hover,
+.section8:hover,
+.section9:hover,
+.section:hover {
+  cursor: pointer;
+}
+.section1 {
+  left: 300.41px;
+}
+.section2,
+.section3,
+.section4,
+.section5,
+.section6,
+.section7 {
+  position: absolute;
+  top: 0;
+  left: 600.82px;
+  width: 267.77px;
+  height: 383.76px;
+}
+.section3,
+.section4,
+.section5,
+.section6,
+.section7 {
+  left: 901.23px;
+}
+.section4,
+.section5,
+.section6,
+.section7 {
+  top: 463.07px;
+  left: 0;
+}
+.section5,
+.section6,
+.section7 {
+  top: 926.13px;
+}
+.section6,
+.section7 {
+  top: 463.07px;
+  left: 300.41px;
+}
+.section7 {
+  top: 926.13px;
+}
+.section-parent,
+.section10,
+.section11,
+.section8,
+.section9 {
+  position: absolute;
+  top: 463.07px;
+  left: 600.82px;
+  width: 267.77px;
+  height: 383.76px;
+}
+.section-parent,
+.section10,
+.section11,
+.section9 {
+  top: 926.13px;
+}
+.section-parent,
+.section10,
+.section11 {
+  top: 463.07px;
+  left: 901.23px;
+}
+.section-parent,
+.section11 {
+  top: 926.13px;
+}
+.section-parent {
+  top: 388px;
+  left: 135px;
+  width: 1169px;
+  height: 1309.9px;
+  font-size: 22.45px;
+}
+.footer-child3 {
+  position: relative;
+  border-top: 1px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  width: 1339.05px;
+  height: 1px;
+}
+.turtle-hatchery8 {
+  text-decoration: none;
+  position: relative;
+  line-height: 96.9%;
+  text-transform: uppercase;
+  color: inherit;
+  display: inline-block;
+  width: 274px;
+  flex-shrink: 0;
+}
+.privacy-policy4 {
+  position: relative;
+  font-size: var(--font-size-lg);
+  line-height: 164.4%;
+  font-family: var(--font-inter);
+  text-align: right;
+}
+.turtle-hatchery-parent5 {
+  width: 1205px;
+  height: 36px;
+  display: flex;
+  flex-direction: row;
+  padding: 0 0 var(--padding-7xs);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-788xl);
+}
+.footer6,
+.turtle-hatchery9 {
+  position: absolute;
+  font-family: var(--font-bowlby-one);
+}
+.footer6 {
+  top: 1952px;
+  left: calc(50% - 669px);
+  width: 1338.05px;
+  height: 67px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--gap-xl);
+  font-size: var(--font-size-3xl);
+  color: var(--color-gainsboro-100);
+}
+.turtle-hatchery9 {
+  margin: 0;
+  top: 1px;
+  left: calc(50% - 108.61px);
+  font-size: 20.94px;
+  line-height: 96.9%;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: left;
+}
+.frame-child8 {
+  position: absolute;
+  top: 43.35px;
+  left: calc(50% - 571px);
+  width: 1142px;
+  height: 0.94px;
+  object-fit: cover;
+}
+.categories4,
+.hikkaduwa-hatchery4,
+.home4,
+.other-hatcheries5,
+.purcahse-donation4,
+.threats4 {
+  text-decoration: none;
+  position: absolute;
+  top: 68.15px;
+  left: 112.32px;
+  font-weight: 600;
+  color: inherit;
+  cursor: pointer;
+}
+.categories4:hover,
+.hikkaduwa-hatchery4:hover,
+.home4:hover,
+.other-hatcheries5:hover,
+.purcahse-donation4:hover,
+.threats4:hover {
+  color: var(--color-yellow-100);
+  cursor: pointer;
+}
+.categories4,
+.hikkaduwa-hatchery4,
+.other-hatcheries5,
+.purcahse-donation4,
+.threats4 {
+  left: 207.79px;
+}
+.hikkaduwa-hatchery4,
+.other-hatcheries5,
+.purcahse-donation4,
+.threats4 {
+  left: 345.39px;
+}
+.other-hatcheries5,
+.purcahse-donation4,
+.threats4 {
+  left: 561.61px;
+}
+.other-hatcheries5,
+.purcahse-donation4 {
+  left: 672.99px;
+}
+.purcahse-donation4 {
+  left: 858.32px;
+}
+.turtle-hatchery-parent6 {
+  position: absolute;
+  top: 55.22px;
+  left: calc(50% - 571px);
+  width: 1142px;
+  height: 88.75px;
+  text-align: center;
+  font-size: 16.85px;
+  color: var(--color-gainsboro-100);
+  font-family: var(--font-inter);
+}
+.donation-see-more-pg {
+  position: relative;
+  background-color: var(--color-gray-200);
+  width: 100%;
+  height: 2097px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+
+
+.below-are-some1{
+	-webkit-animation: slide-in-bck-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-bck-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+ @-webkit-keyframes slide-in-bck-center {
+  0% {
+    -webkit-transform: translateZ(600px);
+            transform: translateZ(600px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bck-center {
+  0% {
+    -webkit-transform: translateZ(600px);
+            transform: translateZ(600px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
